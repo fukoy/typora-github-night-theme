@@ -1,0 +1,411 @@
+@include-when-export url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+/**
+* css forked from https://github.com/GitbookIO/gitbook
+* www.gitbook.com
+* Apache License
+* https://github.com/GitbookIO/gitbook/blob/master/LICENSE
+**/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans Regular"), url("./github/400.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Open Sans Italic"), url("./github/400i.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Open Sans Bold"), url("./github/700.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: bold;
+  src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff");
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Open Sans', 'Clear Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #abb2bf;
+  background: #272b34;
+}
+
+body > *:first-child {
+  margin-top: 0 !important;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+body > h1:first-child,
+body > h2:first-child,
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.mathjax-block > .code-tooltip {
+  bottom: .375rem;
+}
+
+#write {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+#write:after {
+  height: 80px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+  margin-top: 30px;
+}
+
+#write pre.md-meta-block {
+  padding: 1rem;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border: 0;
+  border-radius: 3px;
+  color: #777777;
+  margin-top: 0 !important;
+}
+
+#write > h3.md-focus:before {
+  left: -1.5625rem;
+  top: .375rem;
+}
+
+#write > h4.md-focus:before {
+  left: -1.5625rem;
+  top: .285714286rem;
+}
+
+#write > h4.md-focus:before {
+  left: -1.5625rem;
+  top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+  left: -1.5625rem;
+  top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+  left: -1.5625rem;
+  top: .285714286rem;
+}
+
+a {
+  color: #568a8f;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:hover {
+  color: #80adb3;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 1.5em;
+  cursor: text;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+  text-decoration: none;
+}
+
+h1 tt,
+h1 code,
+h2 tt,
+h2 code,
+h3 tt,
+h3 code,
+h4 tt,
+h4 code,
+h5 tt,
+h5 code,
+h6 tt,
+h6 code {
+  font-size: inherit;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+  margin-top: 0;
+}
+
+h1 {
+  color: #bdbe8e;
+  padding-bottom: .3em;
+  font-size: 1.8em;
+  line-height: 1.3;
+  border-bottom: 1px solid #535b6e;
+}
+
+h2 {
+  color: #b9ba87;
+  padding-bottom: .3em;
+  font-size: 1.7em;
+  line-height: 1.325;
+  border-bottom: 1px solid #535b6e;
+}
+
+h3 {
+  color: #b6b681;
+  font-size: 1.5em;
+  line-height: 1.35;
+}
+
+h4 {
+  color: #b2b37a;
+  font-size: 1.25em;
+}
+
+h5 {
+  color: #aeaf74;
+  font-size: 1em;
+}
+
+h6 {
+  color: #aaab6d;
+  font-size: 1em;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+  margin: .8em 0;
+}
+
+li > ol,
+li > ul {
+  margin: 0;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul,
+ol {
+  padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+hr {
+  height: 3px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #484f60;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+  border-bottom: 1px solid #535b6e;
+}
+
+blockquote {
+  border-left: 3px solid #c8ccd5;
+  color: #828ca1;
+  padding: 0 15px;
+}
+
+blockquote blockquote {
+  padding-right: 0;
+}
+
+table {
+  padding: 0;
+}
+
+table tr {
+  border-top: 1px solid #535b6e;
+  background-color: #3d4351;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #484f60;
+}
+
+table tr th {
+  font-weight: bold;
+}
+
+table tr th,
+table tr td {
+  border: 1px solid #535b6e;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+  margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  margin-bottom: 0;
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+}
+
+pre.md-fences,
+.md-fences,
+code,
+tt {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  color: #535b6e;
+  border-radius: 3px;
+  padding: 0;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  padding: 2px 4px 0px 4px;
+  font-size: 0.9em;
+}
+
+.md-fences {
+  background-color: #f8f8f8;
+}
+
+pre.md-fences,
+.md-fences {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 0.2em 1em;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+.task-list {
+  padding-left: 0;
+}
+
+.task-list-item {
+  padding-left: 32px;
+}
+
+.task-list-item input {
+  top: 3px;
+  left: 8px;
+}
+
+.md-image > .md-meta {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  padding: 2px 4px 0px 4px;
+  font-size: 0.9em;
+  color: inherit;
+}
+
+.md-tag {
+  color: inherit;
+}
+
+.md-toc {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#typora-quick-open {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+  background-color: #FAFAFA;
+  border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+  border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+  pre {
+    word-wrap: break-word;
+  }
+}

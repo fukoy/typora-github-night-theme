@@ -1,0 +1,409 @@
+@include-when-export url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/**
+* css forked from https://github.com/GitbookIO/gitbook
+* www.gitbook.com
+* Apache License
+* https://github.com/GitbookIO/gitbook/blob/master/LICENSE
+**/
+
+
+$background: hsl(222, 14%, 18%);
+$border: lighten($background, 20%);
+
+$text: hsl(220, 14%, 71%);
+$text-header: hsl(61, 27%, 65%);
+$text-link: hsl(186, 25%, 45%);
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans Regular'),url('./github/400.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Open Sans Italic'),url('./github/400i.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Open Sans Bold'),url('./github/700.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Open Sans Bold Italic'),url('./github/700i.woff') format('woff')
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Open Sans', 'Clear Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: $text;
+  background: $background;
+
+  > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  > h1:first-child,
+  > h2:first-child,
+  > h3:first-child,
+  > h4:first-child,
+  > h5:first-child,
+  > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+#write {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 30px;
+
+  &:after {
+    height: 80px;
+  }
+
+  > ul:first-child,
+  > ol:first-child {
+    margin-top: 30px;
+  }
+
+  pre.md-meta-block {
+    padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+  }
+
+  > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+  }
+
+  > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+  }
+
+  > h4.md-focus:before {
+  	left: -1.5625rem;
+  	top: .285714286rem;
+  }
+
+  > h5.md-focus:before {
+  	left: -1.5625rem;
+  	top: .285714286rem;
+  }
+
+  > h6.md-focus:before {
+  	left: -1.5625rem;
+  	top: .285714286rem;
+  }
+}
+
+a {
+  color: $text-link;
+
+  &:first-child {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  &:hover {
+    color: lighten($text-link, 15%);
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 1.5em;
+  cursor: text;
+
+  &:hover a.anchor {
+    text-decoration: none;
+  }
+
+  tt,
+  code {
+    font-size: inherit;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  color: $text-header;
+  padding-bottom: .3em;
+  font-size: 1.8em;
+  line-height: 1.3;
+  border-bottom: 1px solid $border;
+}
+
+h2 {
+  color: darken($text-header, 2%);
+  padding-bottom: .3em;
+  font-size: 1.7em;
+  line-height: 1.325;
+  border-bottom: 1px solid $border;
+}
+
+h3 {
+  color: darken($text-header, 4%);
+  font-size: 1.5em;
+  line-height: 1.35;
+}
+
+h4 {
+  color: darken($text-header, 6%);
+  font-size: 1.25em;
+}
+
+h5 {
+  color: darken($text-header, 8%);
+  font-size: 1em;
+}
+
+h6 {
+  color: darken($text-header, 10%);
+  font-size: 1em;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+  margin: .8em 0;
+}
+
+li {
+  > ol,
+  > ul {
+    margin: 0;
+  }
+
+  p.first {
+    display: inline-block;
+  }
+}
+
+ul,
+ol {
+  padding-left: 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+hr {
+  height: 3px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: lighten($background, 15%);
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+  border-bottom: 1px solid $border;
+}
+
+blockquote {
+  border-left: 3px solid lighten($text, 10%);
+  color: darken($text, 14%);
+  padding: 0 15px;
+
+  blockquote {
+    padding-right: 0;
+  }
+}
+
+table {
+  padding: 0;
+
+  tr {
+    border-top: 1px solid $border;
+    background-color: lighten($background, 10%);
+    margin: 0;
+    padding: 0;
+
+    &:nth-child(2n) {
+      background-color: lighten($background, 15%);
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      border: 1px solid $border;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+}
+
+pre.md-fences,
+.md-fences,
+code,
+tt {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  color: $border;
+  border-radius: 3px;
+  padding: 0;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  padding: 2px 4px 0px 4px;
+  font-size: 0.9em;
+}
+
+.md-fences {
+  background-color: #f8f8f8;
+}
+
+pre.md-fences,
+.md-fences {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 0.2em 1em;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+.task-list{
+  padding-left: 0;
+}
+
+.task-list-item {
+  padding-left:32px;
+
+  input {
+    top: 3px;
+    left: 8px;
+  }
+}
+
+.md-image > .md-meta {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+	color: inherit;
+}
+
+.md-toc {
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+@media screen and (min-width: 914px) {
+  /*body {
+  width: 854px;
+  margin: 0 auto;
+}*/
+}
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+  pre {
+    word-wrap: break-word;
+  }
+}
