@@ -8,13 +8,13 @@
 **/
 
 
-$background: hsl(222, 14%, 18%);
+$background: hsl(222, 15%, 20%);
 $border: lighten($background, 20%);
 
-$text: hsl(220, 14%, 71%);
-$text-header: hsl(61, 27%, 65%);
-$text-link: hsl(186, 25%, 45%);
-
+$text: hsl(220, 15%, 75%);
+$text-header: hsl(200, 30%, 65%);
+$text-link: hsl(162, 30%, 65%);
+$text-bold: hsl(30, 50%, 65%);
 
 @font-face {
   font-family: 'Open Sans';
@@ -45,7 +45,7 @@ $text-link: hsl(186, 25%, 45%);
 }
 
 html {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 body {
@@ -135,6 +135,7 @@ body {
 
 a {
   color: $text-link;
+  font-weight: bold;
 
   &:first-child {
     h1,
@@ -152,6 +153,12 @@ a {
     color: lighten($text-link, 15%);
     text-decoration: none;
   }
+}
+
+b,
+strong,
+em {
+  color: $text-bold;
 }
 
 h1,

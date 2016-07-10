@@ -34,14 +34,14 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 body {
   font-family: 'Open Sans', 'Clear Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.6;
-  color: #abb2bf;
-  background: #272b34;
+  color: #b6bcc9;
+  background: #2b303b;
 }
 
 body > *:first-child {
@@ -123,7 +123,8 @@ body > h1:first-child + h2 {
 }
 
 a {
-  color: #568a8f;
+  color: #8bc1b0;
+  font-weight: bold;
 }
 
 a:first-child h1,
@@ -137,8 +138,14 @@ a:first-child h6 {
 }
 
 a:hover {
-  color: #80adb3;
+  color: #bddbd2;
   text-decoration: none;
+}
+
+b,
+strong,
+em {
+  color: #d2a679;
 }
 
 h1,
@@ -190,39 +197,39 @@ h6 p {
 }
 
 h1 {
-  color: #bdbe8e;
+  color: #8bafc1;
   padding-bottom: .3em;
   font-size: 1.8em;
   line-height: 1.3;
-  border-bottom: 1px solid #535b6e;
+  border-bottom: 1px solid #576075;
 }
 
 h2 {
-  color: #b9ba87;
+  color: #84aabd;
   padding-bottom: .3em;
   font-size: 1.7em;
   line-height: 1.325;
-  border-bottom: 1px solid #535b6e;
+  border-bottom: 1px solid #576075;
 }
 
 h3 {
-  color: #b6b681;
+  color: #7ea5b9;
   font-size: 1.5em;
   line-height: 1.35;
 }
 
 h4 {
-  color: #b2b37a;
+  color: #77a1b6;
   font-size: 1.25em;
 }
 
 h5 {
-  color: #aeaf74;
+  color: #709cb2;
   font-size: 1em;
 }
 
 h6 {
-  color: #aaab6d;
+  color: #6a98af;
   font-size: 1em;
 }
 
@@ -263,16 +270,16 @@ hr {
   height: 3px;
   padding: 0;
   margin: 16px 0;
-  background-color: #484f60;
+  background-color: #4c5467;
   border: 0 none;
   overflow: hidden;
   box-sizing: content-box;
-  border-bottom: 1px solid #535b6e;
+  border-bottom: 1px solid #576075;
 }
 
 blockquote {
-  border-left: 3px solid #c8ccd5;
-  color: #828ca1;
+  border-left: 3px solid #d3d7de;
+  color: #8d97aa;
   padding: 0 15px;
 }
 
@@ -285,14 +292,14 @@ table {
 }
 
 table tr {
-  border-top: 1px solid #535b6e;
-  background-color: #3d4351;
+  border-top: 1px solid #576075;
+  background-color: #414858;
   margin: 0;
   padding: 0;
 }
 
 table tr:nth-child(2n) {
-  background-color: #484f60;
+  background-color: #4c5467;
 }
 
 table tr th {
@@ -301,7 +308,7 @@ table tr th {
 
 table tr th,
 table tr td {
-  border: 1px solid #535b6e;
+  border: 1px solid #576075;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
@@ -327,7 +334,7 @@ code,
 tt {
   border: 1px solid #ddd;
   background-color: #f8f8f8;
-  color: #535b6e;
+  color: #576075;
   border-radius: 3px;
   padding: 0;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
