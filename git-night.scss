@@ -150,11 +150,6 @@ a {
   strong,
   em {
     color: $text-link;
-
-    &:hover {
-      color: darken($text-link, 15%);
-      text-decoration: none;
-    }
   }
 
   &:first-child {
@@ -170,8 +165,12 @@ a {
   }
 
   &:hover {
-    color: darken($text-link, 15%);
-    text-decoration: none;
+    &,
+    b,
+    strong,
+    em {
+      color: darken($text-link, 15%);
+    }
   }
 }
 

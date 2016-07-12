@@ -141,13 +141,6 @@ a em {
   color: #8bc1b0;
 }
 
-a b:hover,
-a strong:hover,
-a em:hover {
-  color: #59a68f;
-  text-decoration: none;
-}
-
 a:first-child h1,
 a:first-child h2,
 a:first-child h3,
@@ -158,9 +151,11 @@ a:first-child h6 {
   padding-top: 0;
 }
 
-a:hover {
+a:hover,
+a:hover b,
+a:hover strong,
+a:hover em {
   color: #59a68f;
-  text-decoration: none;
 }
 
 h1,
