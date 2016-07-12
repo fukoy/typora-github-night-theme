@@ -12,7 +12,8 @@ Main file is the **scss** file. You can easily edit the colors, but it would be 
 - **Headers** : `hsl(200, 30%, 65%)`
   + Header colors darken **2%** for each level.
 - **Links** : `hsl(162, 30%, 65%)`
-- **Bold / Italic** : `hsl(30, 50%, 65%)`
+- **Bold** : `hsl(30, 50%, 65%)`
+- **Italic** : `hsl(270, 50%, 65%)`
 
 ## Image
 
