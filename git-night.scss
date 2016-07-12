@@ -15,6 +15,7 @@ $text: hsl(220, 15%, 75%);
 $text-header: hsl(200, 30%, 65%);
 $text-link: hsl(162, 30%, 65%);
 $text-bold: hsl(30, 50%, 65%);
+$text-italic: hsl(270, 50%, 65%);
 
 @font-face {
   font-family: 'Open Sans';
@@ -133,9 +134,28 @@ body {
   }
 }
 
+b,
+strong {
+  color: $text-bold;
+}
+
+em {
+  color: $text-italic;
+}
+
 a {
   color: $text-link;
-  font-weight: bold;
+
+  b,
+  strong,
+  em {
+    color: $text-link;
+
+    &:hover {
+      color: darken($text-link, 15%);
+      text-decoration: none;
+    }
+  }
 
   &:first-child {
     h1,
@@ -150,15 +170,9 @@ a {
   }
 
   &:hover {
-    color: lighten($text-link, 15%);
+    color: darken($text-link, 15%);
     text-decoration: none;
   }
-}
-
-b,
-strong,
-em {
-  color: $text-bold;
 }
 
 h1,

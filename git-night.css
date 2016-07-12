@@ -122,9 +122,30 @@ body > h1:first-child + h2 {
   top: .285714286rem;
 }
 
+b,
+strong {
+  color: #d2a679;
+}
+
+em {
+  color: #a679d2;
+}
+
 a {
   color: #8bc1b0;
-  font-weight: bold;
+}
+
+a b,
+a strong,
+a em {
+  color: #8bc1b0;
+}
+
+a b:hover,
+a strong:hover,
+a em:hover {
+  color: #59a68f;
+  text-decoration: none;
 }
 
 a:first-child h1,
@@ -138,14 +159,8 @@ a:first-child h6 {
 }
 
 a:hover {
-  color: #bddbd2;
+  color: #59a68f;
   text-decoration: none;
-}
-
-b,
-strong,
-em {
-  color: #d2a679;
 }
 
 h1,
