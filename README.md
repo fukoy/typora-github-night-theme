@@ -4,6 +4,8 @@ Main file is the **scss** file. You can easily edit the colors, but it would be 
 
 ## TODO
 - [ ] Add different color schemas.
+- [x] Name update for new version
+- [ ] Fix focus mode color diff
 
 ## Color Variables
 
